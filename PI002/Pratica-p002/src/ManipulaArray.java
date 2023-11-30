@@ -34,12 +34,25 @@ public class ManipulaArray {
         return array;
     }    
 
+    public static int calcularSomaArray(int[] array) {
+        int soma = 0;
+        for (int elemento : array) {
+            soma += elemento;
+        }
+        return soma;
+    }    
+
 public static void main(String[] args) {
 
         int[] arrayDoUsuario = criarArrayDoUsuario();
         System.out.println("Array do usuário: " + Arrays.toString(arrayDoUsuario));
+        System.out.println("Soma do array do usuário: " + calcularSomaArray(arrayDoUsuario));
+
+        
 
         int[] arrayAleatorio = criarArrayAleatorio(5, 100);
         System.out.println("Array aleatório: " + Arrays.toString(arrayAleatorio));
+        System.out.println("Soma do array aleatório: " + calcularSomaArray(arrayAleatorio));
+
     }
 }
