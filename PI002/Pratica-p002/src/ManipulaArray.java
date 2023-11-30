@@ -42,17 +42,41 @@ public class ManipulaArray {
         return soma;
     }    
 
+    public static int encontrarMaiorValor(int[] array) {
+        int maior = array[0];
+        for (int elemento : array) {
+            if (elemento > maior) {
+                maior = elemento;
+            }
+        }
+        return maior;
+    }
+
+    public static int encontrarMenorValor(int[] array) {
+        int menor = array[0];
+        for (int elemento : array) {
+            if (elemento < menor) {
+                menor = elemento;
+            }
+        }
+        return menor;
+    }
+
 public static void main(String[] args) {
 
         int[] arrayDoUsuario = criarArrayDoUsuario();
         System.out.println("Array do usuário: " + Arrays.toString(arrayDoUsuario));
         System.out.println("Soma do array do usuário: " + calcularSomaArray(arrayDoUsuario));
+        System.out.println("Maior valor do array do usuário: " + encontrarMaiorValor(arrayDoUsuario));
+        System.out.println("Menor valor do array do usuário: " + encontrarMenorValor(arrayDoUsuario));
 
         
 
         int[] arrayAleatorio = criarArrayAleatorio(5, 100);
         System.out.println("Array aleatório: " + Arrays.toString(arrayAleatorio));
         System.out.println("Soma do array aleatório: " + calcularSomaArray(arrayAleatorio));
+        System.out.println("Maior valor do array aleatório: " + encontrarMaiorValor(arrayAleatorio));
+        System.out.println("Menor valor do array aleatório: " + encontrarMenorValor(arrayAleatorio));
 
     }
 }
