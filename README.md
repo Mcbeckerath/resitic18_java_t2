@@ -6,5 +6,3 @@ Repositório dedicado ao armazenamento de atividades práticas do modulo de Java
 * `p001`: Atividade prática 1
 * `p002`: Atividade prática 2
 ....
-
->Aluno: Matheus Costa Beckerath
